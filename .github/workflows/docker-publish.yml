@@ -1,4 +1,4 @@
-name: Haskell aarch64 base
+name: aarch64 base 
 
 on:
   push:
