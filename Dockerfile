@@ -19,22 +19,22 @@ ENV NIX_PATH=/home/app/.nix-defexpr/channels
 
 RUN nix-env -f "<nixpkgs>" -iA haskellPackages.ghc haskellPackages.cabal-install
 RUN nix-env -f "<nixpkgs>" -iA haskellPackages.refined \
-   && nix-env -f "<nixpkgs>" -iA haskellPackages.mtl \
-   && nix-env -f "<nixpkgs>" -iA haskellPackages.aeson \
-   && nix-env -f "<nixpkgs>" -iA haskellPackages.servant-server \
-   && nix-env -f "<nixpkgs>" -iA haskellPackages-wai \
-   && nix-env -f "<nixpkgs>" -iA haskellPackages.wai-extra \
-   && nix-env -f "<nixpkgs>" -iA haskellPackages.base \
-   && nix-env -f "<nixpkgs>" -iA haskellPackages.container \
-   && nix-env -f "<nixpkgs>" -iA haskellPackages.either \
-   && nix-env -f "<nixpkgs>" -iA haskellPackages.generic-random \
-   && nix-env -f "<nixpkgs>" -iA haskellPackages.warp \
-   && nix-env -f "<nixpkgs>" -iA haskellPackages.transformers \
-   && nix-env -f "<nixpkgs>" -iA haskellPackages.stm \
-   && nix-env -f "<nixpkgs>" -iA haskellPackages.hspec \
-   && nix-env -f "<nixpkgs>" -iA haskellPackages.hspec-wai \
-   && nix-env -f "<nixpkgs>" -iA haskellPackages.bytestring \
-   && nix-env -f "<nixpkgs>" -iA haskellPackages.async 
+  haskellPackages.mtl \
+  haskellPackages.aeson \
+  haskellPackages.servant-server \
+  haskellPackages.wai \
+  haskellPackages.wai-extra \
+  haskellPackages.base \
+  haskellPackages.container \
+  haskellPackages.either \
+  haskellPackages.generic-random \
+  haskellPackages.warp \
+  haskellPackages.transformers \
+  haskellPackages.stm \
+  haskellPackages.hspec \
+  haskellPackages.hspec-wai \
+  haskellPackages.bytestring \
+  haskellPackages.async 
 # To build your haskell app you would run something like this
 #COPY . /home/app/yourapp
 #USER root
