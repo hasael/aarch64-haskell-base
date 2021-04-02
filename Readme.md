@@ -1,4 +1,5 @@
 [![aarch64 base](https://github.com/hasael/aarch64-haskell-base/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/hasael/aarch64-haskell-base/actions/workflows/docker-publish.yml)
+[![aarch64 cached](https://github.com/hasael/aarch64-haskell-base/actions/workflows/docker-publish-cached.yml/badge.svg)](https://github.com/hasael/aarch64-haskell-base/actions/workflows/docker-publish-cached.yml)
 ## Haskell on aarch64 image
 
 Docker image using aarch64/alpine to build and run haskell applications.
