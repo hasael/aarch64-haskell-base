@@ -17,6 +17,7 @@ RUN source /home/app/.nix-profile/etc/profile.d/nix.sh
 ENV PATH=/home/app/.nix-profile/bin/:$PATH
 ENV NIX_PATH=/home/app/.nix-defexpr/channels
 
+<<<<<<< HEAD
 RUN nix-env -f "<nixpkgs>" -iA haskellPackages.ghc haskellPackages.cabal-install \ 
      haskellPackages.refined \
      haskellPackages.aeson \
@@ -29,6 +30,26 @@ RUN nix-env -f "<nixpkgs>" -iA haskellPackages.ghc haskellPackages.cabal-install
      haskellPackages.hspec-wai \
      haskellPackages.async\
      haskellPackages.QuickCheck\
+=======
+RUN nix-env -f "<nixpkgs>" -iA haskellPackages.ghc haskellPackages.cabal-install
+RUN nix-env -f "<nixpkgs>" -iA haskellPackages.refined \
+  haskellPackages.mtl \
+  haskellPackages.aeson \
+  haskellPackages.servant-server \
+  haskellPackages.wai \
+  haskellPackages.wai-extra \
+  haskellPackages.base \
+  haskellPackages.container \
+  haskellPackages.either \
+  haskellPackages.generic-random \
+  haskellPackages.warp \
+  haskellPackages.transformers \
+  haskellPackages.stm \
+  haskellPackages.hspec \
+  haskellPackages.hspec-wai \
+  haskellPackages.bytestring \
+  haskellPackages.async 
+>>>>>>> Update base packages
 # To build your haskell app you would run something like this
 #COPY . /home/app/yourapp
 #USER root
