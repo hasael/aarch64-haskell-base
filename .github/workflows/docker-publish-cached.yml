@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 name: aarch64 cached
-=======
-name: Docker
->>>>>>> Add image with some base nix installations
 
 on:
   push:
