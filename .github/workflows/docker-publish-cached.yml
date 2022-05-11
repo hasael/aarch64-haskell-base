@@ -1,6 +1,7 @@
 name: aarch64 cached
 
 on:
+  workflow_dispatch:
   push:
     # Publish `cached` as Docker `cached` image.
     branches:
