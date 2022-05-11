@@ -5,7 +5,7 @@ on:
   push:
     # Publish `cached` as Docker `cached` image.
     branches:
-      - cached
+      - nixos-base
 
     # Publish `v1.2.3` tags as releases.
     tags:
