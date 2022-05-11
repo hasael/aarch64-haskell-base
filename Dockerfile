@@ -1,5 +1,5 @@
 #FROM arm64v8/alpine:latest
-FROM nixos/nix:latest
+FROM nixos/nix
 # Create non root user to install nix
 
 RUN nix-channel --update
