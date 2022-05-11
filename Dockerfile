@@ -17,6 +17,18 @@ RUN source /home/app/.nix-profile/etc/profile.d/nix.sh
 ENV PATH=/home/app/.nix-profile/bin/:$PATH
 ENV NIX_PATH=/home/app/.nix-defexpr/channels
 
+RUN nix-env -f "<nixpkgs>" -iA haskellPackages.ghc haskellPackages.cabal-install \ 
+     haskellPackages.refined \
+     haskellPackages.aeson \
+     haskellPackages.servant-server \
+     haskellPackages.wai \
+     haskellPackages.wai-extra \
+     haskellPackages.either \
+     haskellPackages.warp \
+     haskellPackages.hspec \
+     haskellPackages.hspec-wai \
+     haskellPackages.async\
+     haskellPackages.QuickCheck\
 # To build your haskell app you would run something like this
 #COPY . /home/app/yourapp
 #USER root
